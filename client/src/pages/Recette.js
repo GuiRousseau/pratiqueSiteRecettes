@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+//const fs = require("fs")
 
 class List extends Component {
   // Initialize the state
@@ -7,18 +8,6 @@ class List extends Component {
     this.state = {
       list: []
     }
-  }
-
-  // Fetch the list on first mount
-  componentDidMount() {
-    this.getList();
-  }
-
-  // Retrieves the list of items from the Express app
-  getList = () => {
-    fetch('/api/getList')
-    .then(res => res.json())
-    .then(list => this.setState({ list }))
   }
 
   render() {
