@@ -4,13 +4,13 @@ export const recettesData = {
             "ingredients" : ["2 oz. Whiskey", "4-5 goutes Angostura bitters", "Un peu de sirop/sucre"],
             "desc" : "petite description",
             "steps" : ["Brasser dans un verre old-fashionned avec une grosse glace", "Ajouter des cerises de marasquin et une pelure d’orange"],
-            "tags" : ["angostura bitters", "angostura", "bitters", "bourbon", "whiskey"]
+            "tags" : ["angostura", "bitters", "angostura", "bitters", "bourbon", "whiskey"]
         },
         "Manhatan" : {
             "ingredients" : ["2 oz. Whiskey", "¾ oz. Vermouth rouge", "4-5 goutes Angostura bitters"],
             "desc" : "petite description",
             "steps" : ["Brasser dans un verre old-fashionned avec une grosse glace", "Ajouter des cerises de marasquin"],
-            "tags" : ["angostura bitters", "angostura", "bitters", "vermouth rouge", "vermouth", "rouge", "bourbon", "whiskey"]
+            "tags" : ["angostura", "bitters", "angostura", "bitters", "vermouth rouge", "vermouth", "rouge", "bourbon", "whiskey"]
         },
         "Mojito" : {
             "ingredients" : ["2 oz. Rhum", "4-6 feuilles Menthe", "½ oz. Sirop", "¾ oz. Lime"],
@@ -22,7 +22,7 @@ export const recettesData = {
             "ingredients" : ["1 ½ oz. Rhum", "4-6 feuilles Menthe", "1 oz. Sirop", "¾ oz. Lime", "2 goutes Angostura bitters", "2 oz. Bulles"],
             "desc" : "petite description",
             "steps" : ["Dans un shaker, mélanger menthe, sirop, rhum, lime, bitters et glace", "Verser avec double tamis dans une coupe", "Ajouter bulles et une feuille menthe pour garnir"],
-            "tags" : ["angostura bitters", "angostura", "bitters", "champagne", "menthe", "mousseux", "rhum"]
+            "tags" : ["angostura", "bitters", "angostura", "bitters", "champagne", "menthe", "mousseux", "rhum"]
         },
         "Devil's Eye" : {
             "ingredients" : ["1 ½ oz. Gin", "½ oz. Curaçao bleu", "½ oz. Citron"],
