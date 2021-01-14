@@ -1,42 +1,34 @@
-import React, { Component } from 'react';
-//const fs = require("fs")
+import React from 'react';
+import { NavLink } from "react-router-dom";
 
-class List extends Component {
-  // Initialize the state
-  constructor(props){
-    super(props);
-    this.state = {
-      list: []
-    }
-  }
+const Details = props => {
+    const { name, ingredients, desc, steps } =
+    (props.data) || {};
 
-  render() {
-    const { list } = this.state;
+    console.log(props.data)
+
 
     return (
-      <div className="App">
-        <h1>List of Items</h1>
-        {/* Check to see if any items are found*/}
-        {list.length ? (
+      <div>
+        <NavLink to="/" activeClassName="active">
+          Go Back
+        </NavLink>
+        <div className="form-details">
           <div>
-            {/* Render the list of items */}
-            {list.map((item) => {
-              return(
-                <div>
-                  {item}
-                </div>
-              );
-            })}
+            <strong>Nom:</strong> {name/*||cocktail*/}
           </div>
-        ) : (
           <div>
-            <h2>No List Items Found</h2>
+            <strong>Ingredients:</strong> {ingredients/*||data["ingredients"]*/}
           </div>
-        )
-      }
+          <div>
+            <strong>Description:</strong> {desc/*|| data["desc"]*/}
+          </div>
+          <div>
+            <strong>Étapes:</strong> {steps/*|| data["steps"]*/}
+          </div>
+        </div>
       </div>
     );
   }
-}
 
-export default List;
+export default Details;
