@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-/*import { Link } from 'react-router-dom';*/
 import SearchBar from "material-ui-search-bar";
 import Grid from '@material-ui/core/Grid';
 import {recettesData} from '../Recipes'
@@ -12,7 +11,6 @@ const recipes = JSON.parse(recettesJsON);
 Object.keys(recipes).forEach(function(entry) {
   tagsRecettes[entry] = recipes[entry]['tags']
 });
-console.log(tagsRecettes)
 
 class Home extends Component {
   // Initialize the state
@@ -34,7 +32,7 @@ class Home extends Component {
     <div className="App">
       <h1>Project Home</h1>
       {/* Link to List.js */}
-      <SearchBar width={0.75}
+      <SearchBar 
         value={this.state.value}
         onChange={(newValue) => this.setState({searchTags: newValue.split(" ")})}
         onRequestSearch={() =>  this.setState({content: FiltrerRecettes(this.state.searchTags, tagsRecettes, recipes)})}/* TO-DO faire marcher */ 
