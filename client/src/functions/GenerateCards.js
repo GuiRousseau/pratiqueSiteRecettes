@@ -3,6 +3,7 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
+import { Link } from 'react-router-dom';
 import Typography from '@material-ui/core/Typography';
 
 export default function GenerateCards(cards, recipes) {
@@ -19,7 +20,9 @@ export default function GenerateCards(cards, recipes) {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small">Plus</Button>
+              <Link to={`./cocktail/${entry}`}>
+                <Button size="small">Plus</Button>
+              </Link>
             </CardActions>
           </Card>
         </Grid>

@@ -3,6 +3,8 @@ import { Route, Switch } from 'react-router-dom';
 import Home from './pages/Home';
 import Recette from './pages/Recette';
 import './App.css';
+import GetData from './functions/GetData'
+console.log(window.location.pathname)
 
 class App extends Component {
   render() {
@@ -10,7 +12,7 @@ class App extends Component {
       <div>
         <Switch>
           <Route exact path='/' component={Home}/>
-          <Route path='/cocktail/*' component={Recette}/>
+          <Route path='/cocktail/*' render={() => <Recette data = {GetData(window.location.pathname)}/>}/>
         </Switch>
       </div>
     )
